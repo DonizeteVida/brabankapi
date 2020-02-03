@@ -8,5 +8,6 @@ const conexao = mysql.createConnection({
     database: 'brabank'
 })
 
-module.exports = conexao
+conexao.connect()
 
+module.exports = conexao
